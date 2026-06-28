@@ -1,11 +1,8 @@
-import { Velr } from "@velr-ai/velr";
 import {
   MOVIES_CREATE,
-  optionalImport,
   printRows,
   runIfMain,
-  withDb,
-  withTempDbPath
+  withDb
 } from "../example-utils.js";
 
 export async function main() {
