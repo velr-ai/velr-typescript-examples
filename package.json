@@ -1,0 +1,63 @@
+{
+  "name": "velr-typescript-examples",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Examples showing how to use the Velr TypeScript driver",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "velr-ts-examples": "./dist/cli.js"
+  },
+  "scripts": {
+    "list": "tsx src/cli.ts list",
+    "example": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:native": "node scripts/run-native-tests.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@velr-ai/velr": "^0.2.29"
+  },
+  "peerDependencies": {
+    "apache-arrow": ">=15",
+    "arquero": ">=8",
+    "csv-parse": ">=5",
+    "vega": ">=5",
+    "vega-lite": ">=5"
+  },
+  "peerDependenciesMeta": {
+    "apache-arrow": {
+      "optional": true
+    },
+    "arquero": {
+      "optional": true
+    },
+    "csv-parse": {
+      "optional": true
+    },
+    "vega": {
+      "optional": true
+    },
+    "vega-lite": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velr-ai/velr-typescript-examples.git"
+  },
+  "homepage": "https://velr.ai/",
+  "bugs": {
+    "url": "https://github.com/velr-ai/velr-typescript-examples/issues"
+  }
+}
